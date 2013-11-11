@@ -242,6 +242,14 @@ public class CdcAcmSerialDriver extends CommonUsbSerialDriver {
                 new int[] {
                     UsbId.LEAFLABS_MAPLE,
                 });
+        supportedDevices.put(Integer.valueOf(UsbId.VENDOR_OPENMOKO),
+                new int[] {
+                    UsbId.OPENMOKO_KCOPTER,
+                });
+        supportedDevices.put(Integer.valueOf(UsbId.VENDOR_STM),
+                new int[] {
+                    UsbId.STM_STM32F407,
+                });
         return supportedDevices;
     }
 
